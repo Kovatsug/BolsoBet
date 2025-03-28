@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jogo de rolar dados, clique no botão para jogar."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rolar Dados - Jogo Interativo</title>
+    <script defer src="dices.js"></script>
+  </head>
+  <body>
+    <header class="top-bar">
+      <div class="logo">
+        <a href="#">LOGO</a>
+      </div>
+
+      <p id="posicaoficha">
+        Fichas: <span id="fichas" class="fichas">100</span>
+      </p>
+    </header>
+
+    <section class="game-container">
+      <button class="rolarDados" aria-label="Clique para rolar os dados">
+        Girar
+      </button>
+      <h2 id="Number" class="numero-dado">00</h2>
+    </section>
+
+    <input type="number" class="aposta" min="1" />
+    <label for="" id="numero-input">Número: </label
+    ><input
+      class="numero"
+      type="number"
+      min="1"
+      max="100"
+      name="Número"
+      id=""
+    />
+    <select class="escolha" name="" id="">
+      <option value="">Maior</option>
+      <option value="">Menor</option>
+    </select>
+  </body>
+</html>
